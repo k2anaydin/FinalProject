@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    public interface ICarDal
+    public interface IBrandDal
     {
-        
+        List<Brand> GetAll();
+        Brand GetById(int Id);
+        void Add(Brand brand);
+        void Update(Brand brand);
+        void Delete(Brand brand);
     }
 }
