@@ -7,12 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    public interface IColorDal
+    public interface IColorDal : IEntityRepository<Color>
     {
-        List<Color> GetAll();
-        Color GetById(int Id);
-        void Add(Color color);
-        void Update(Color color);
-        void Delete(Color color);
     }
 }
